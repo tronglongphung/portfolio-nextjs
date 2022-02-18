@@ -17,7 +17,7 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
   return (
-    <nav className="flex items-center justify-center gap-2 py-6 ">
+    <nav className="flex items-center justify-center gap-2 pt-4 pb-8 text-sm sm:pb-12 sm:pt-8 sm:text-base">
       {navigation.map(({ name, href }, index) => (
         <Link
           href={href}
