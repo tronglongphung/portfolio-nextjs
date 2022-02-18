@@ -1,15 +1,17 @@
 import '../styles/globals.css';
 import Layout from '@/components/Layout/Layout';
 import { ThemeProvider } from 'next-themes';
-import Head from 'next/head';
 
+// need to update next-themes to remove script error
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+    <>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </>
   );
 }
 
