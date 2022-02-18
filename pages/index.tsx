@@ -2,5 +2,5 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
-  return <div>add something in</div>;
+  return <div className="container min-h-screen">add something in</div>;
 }
