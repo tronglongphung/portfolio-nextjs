@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export const easing = [0.6, -0.05, 0.01, 0.99];
 
 export const fadeInUp = {
@@ -22,3 +24,27 @@ export const stagger = {
     },
   },
 };
+
+export function Container({ children }) {
+  return (
+    <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+      {children}
+    </motion.div>
+  );
+}
+
+export function Stagger({ children, className }: { children: React.ReactNode; className?: string }) {
+  return (
+    <motion.div variants={stagger} className={className}>
+      {children}
+    </motion.div>
+  );
+}
+
+export function FadeSection({ children, className }: { children: React.ReactNode; className?: string }) {
+  return (
+    <motion.section variants={fadeInUp} className={className}>
+      {children}
+    </motion.section>
+  );
+}

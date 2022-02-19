@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Form from '@/components/Form';
 import { SiNextdotjs, SiTailwindcss, SiNodedotjs, SiTypescript } from 'react-icons/si';
-import { motion } from 'framer-motion';
-import { fadeInUp, stagger } from '@/components/Animation';
+import { Container, Stagger, FadeSection } from '@/components/Animation';
 import styles from '../styles/index.module.css';
+import Tippy from '@tippyjs/react';
 
 export default function Home() {
   return (
@@ -18,13 +18,10 @@ export default function Home() {
                 latest technologies and technologies I use."
         />
       </Head>
-      <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
-        <motion.div variants={stagger}>
+      <Container>
+        <Stagger>
           {/* Heading */}
-          <motion.section
-            variants={fadeInUp}
-            className="flex flex-col-reverse items-stretch mb-12 sm:flex-row sm:mb-16"
-          >
+          <FadeSection className="flex flex-col-reverse items-stretch mb-12 sm:flex-row sm:mb-16">
             <div className="sm:pr-10">
               <h1 className={styles.h1}>Tom Phung</h1>
               <h2 className="mb-6">Fullstack Developer, Uni Student @UniSA</h2>
@@ -43,10 +40,10 @@ export default function Home() {
                 className="rounded-2xl sm:rounded-full"
               />
             </div>
-          </motion.section>
+          </FadeSection>
 
           {/* About Me */}
-          <motion.section variants={fadeInUp} className={styles.section}>
+          <FadeSection className={styles.section}>
             <h3 className={styles.h3}>About Me</h3>
             <div className="text-stone-700 dark:text-stone-200">
               <p className={styles.section_p}>
@@ -59,16 +56,16 @@ export default function Home() {
                 <strong>Education: </strong>📚 B.Bus (Management) @UniSA, 🧑🏻‍💻 Coding Bootcamp @UofA
               </p>
             </div>
-          </motion.section>
+          </FadeSection>
 
           {/* Skills */}
-          <motion.section variants={fadeInUp} className={styles.section}>
+          <FadeSection className={styles.section}>
             <h3 className={styles.h3}>Skills</h3>
             <div className="text-stone-700 dark:text-stone-200">
               <p className={styles.section_p}>
                 These are the skills I have attained throughout the Bootcamp and months of Self-learning:
               </p>
-              <div className="mb-10">
+              <div className="mb-8 sm:mb-10">
                 <p className={styles.section_p}>
                   <strong>Languages: </strong>JavaScript, TypeScript <span className="italic">(Learning)</span>, HTML,
                   CSS, SQL
@@ -83,24 +80,40 @@ export default function Home() {
 
               <div className="flex items-center gap-3">
                 <span className="font-semibold">Current favourite stack:</span>
-                <SiNextdotjs size={28} />
-                <SiTailwindcss size={28} />
-                <SiNodedotjs size={28} />
-                <SiTypescript size={28} />
+                <Tippy content={<p>Next.js</p>}>
+                  <div>
+                    <SiNextdotjs size={25} />
+                  </div>
+                </Tippy>
+                <Tippy content={<p>Tailwind CSS</p>}>
+                  <div>
+                    <SiTailwindcss size={25} />
+                  </div>
+                </Tippy>
+                <Tippy content={<p>Node.js</p>}>
+                  <div>
+                    <SiNodedotjs size={25} />
+                  </div>
+                </Tippy>
+                <Tippy content={<p>TypeScript</p>}>
+                  <div>
+                    <SiTypescript size={25} />
+                  </div>
+                </Tippy>
               </div>
             </div>
-          </motion.section>
+          </FadeSection>
 
           {/* Contact */}
-          <motion.section variants={fadeInUp} className={styles.section}>
+          <FadeSection className={styles.section}>
             <h3 className={styles.h3}>Contact</h3>
             <div className="text-stone-700 dark:text-stone-200">
               <p className={styles.section_p}>You can contact me using the form, or though the socials below</p>
               <Form />
             </div>
-          </motion.section>
-        </motion.div>
-      </motion.div>
+          </FadeSection>
+        </Stagger>
+      </Container>
     </>
   );
 }
