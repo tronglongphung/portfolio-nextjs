@@ -1,0 +1,18 @@
+.h1 {
+  @apply mb-2 text-3xl font-bold sm:mb-3 sm:text-5xl;
+}
+
+.h2 {
+}
+
+.h3 {
+  @apply mb-4 text-3xl font-bold sm:mb-6;
+}
+
+.section {
+  @apply mb-12 sm:mb-16;
+}
+
+.section_p {
+  @apply mb-4;
+}

@@ -7,9 +7,13 @@ export default function Work() {
   return (
     <>
       <Head>
-        <title>Tom Phung - Developer, Gamer</title>
+        <title>Tom Phung - Work</title>
+        <meta name="description" content="Here are some of the projects I've worked on." />
       </Head>
-      <h1 className="mb-2 text-3xl font-bold sm:text-4xl">Work</h1>
+
+      <motion.div variants={stagger}>
+        <h1 className="mb-2 text-3xl font-bold sm:text-4xl">Work</h1>
+      </motion.div>
     </>
   );
 }
