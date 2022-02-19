@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Work', href: '/work' },
-  { name: 'Resume', href: 'https://drive.google.com/file/d/1t4U9ufsTSVFp2OE274Z8Ya614gXU9hUS/view?usp=sharing' },
+  { name: 'Resume', href: '/resume.pdf' },
 ];
 
 function classNames(...classes) {
