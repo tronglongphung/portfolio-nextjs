@@ -35,7 +35,7 @@ export default function Form() {
   return (
     <>
       <form
-        className="border-2 rounded dark:bg-transparent bg-stone-100 border-stone-100 dark:border-stone-800"
+        className="border-2 rounded dark:bg-slate-700 bg-stone-100 border-stone-100 dark:border-slate-700 "
         ref={form}
         onSubmit={sendEmail}
       >
@@ -51,7 +51,7 @@ export default function Form() {
               id="name"
               onChange={handleChange}
               autoComplete="name"
-              className="w-full rounded text-stone-900"
+              className="w-full rounded text-stone-900 "
             />
           </div>
 
@@ -67,7 +67,7 @@ export default function Form() {
               id="email"
               onChange={handleChange}
               autoComplete="email"
-              className="w-full rounded text-stone-900"
+              className="w-full rounded text-stone-900 "
             />
           </div>
 
@@ -86,7 +86,10 @@ export default function Form() {
               />
             </div>
           </div>
-          <button type="submit" className="col-span-6 py-3 mt-1 text-sm rounded bg-stone-300 dark:bg-stone-600">
+          <button
+            type="submit"
+            className="col-span-6 py-3 mt-1 text-sm font-semibold rounded bg-emerald-200 dark:bg-violet-300 text-stone-900 "
+          >
             {sendForm}
           </button>
         </div>
