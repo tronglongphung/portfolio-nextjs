@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tom Phung - Developer, Gamer</title>
+        <title>Tom Phung</title>
         <meta
           name="description"
           content="I build React / Next.js Applications as a hobby while having Uni Studies. Regularly keeping up with the
