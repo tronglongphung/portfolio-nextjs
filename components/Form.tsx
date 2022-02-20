@@ -35,7 +35,7 @@ export default function Form() {
   return (
     <>
       <form
-        className="border-2 rounded dark:bg-slate-700 bg-stone-100 border-stone-100 dark:border-slate-700 "
+        className="border-2 rounded dark:bg-slate-800 bg-stone-100 border-stone-100 dark:border-slate-800 "
         ref={form}
         onSubmit={sendEmail}
       >
@@ -88,7 +88,7 @@ export default function Form() {
           </div>
           <button
             type="submit"
-            className="col-span-6 py-3 mt-1 text-sm font-semibold rounded bg-emerald-200 dark:bg-violet-300 text-stone-900 "
+            className="col-span-6 py-3 mt-1 text-sm font-semibold rounded bg-emerald-200 dark:bg-slate-500 text-stone-900 dark:text-stone-100 "
           >
             {sendForm}
           </button>

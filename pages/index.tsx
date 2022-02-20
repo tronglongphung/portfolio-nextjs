@@ -45,7 +45,7 @@ export default function Home() {
           {/* About Me */}
           <FadeSection className={styles.section}>
             <h3 className={styles.h3}>About Me</h3>
-            <div className="text-stone-700 dark:text-stone-200">
+            <div className="text-stone-800 dark:text-stone-200">
               <p className={styles.section_p}>
                 <strong>Location: </strong>🏡 Adelaide, Australia
               </p>
@@ -61,7 +61,7 @@ export default function Home() {
           {/* Skills */}
           <FadeSection className={styles.section}>
             <h3 className={styles.h3}>Skills</h3>
-            <div className="text-stone-700 dark:text-stone-200">
+            <div className="text-stone-800 dark:text-stone-200">
               <p className={styles.section_p}>
                 These are the skills I have attained throughout the Bootcamp and months of Self-learning:
               </p>
@@ -107,8 +107,8 @@ export default function Home() {
           {/* Contact */}
           <FadeSection className={styles.section}>
             <h3 className={styles.h3}>Contact</h3>
-            <div className="text-stone-700 dark:text-stone-200">
-              <p className={styles.section_p}>You can contact me using the form, or though the socials below</p>
+            <div className="text-stone-800 dark:text-stone-200">
+              <p className={styles.section_p}>You can contact me using the form, or though the socials below :)</p>
               <Form />
             </div>
           </FadeSection>

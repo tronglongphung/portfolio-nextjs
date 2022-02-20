@@ -1,15 +1,11 @@
 .h1 {
-  @apply mb-8 text-3xl font-bold sm:text-4xl;
-}
-
-.h3 {
-  @apply mb-4 text-3xl font-bold sm:mb-6;
+  @apply mb-6 text-3xl font-bold sm:text-4xl;
 }
 
 .section {
-  @apply mb-14 sm:mb-16;
+  @apply mb-16 sm:mb-20;
 }
 
 .section_p {
-  @apply mb-6;
+  @apply mb-4;
 }
