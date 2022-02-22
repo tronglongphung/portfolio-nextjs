@@ -7,14 +7,14 @@ specifiers:
   '@tailwindcss/line-clamp': ^0.3.1
   '@tailwindcss/typography': ^0.5.2
   '@tippyjs/react': ^4.2.6
-  '@types/node': ^17.0.18
+  '@types/node': ^17.0.19
   '@types/react': ^17.0.39
   autoprefixer: ^10.4.2
   eslint: 8.9.0
   eslint-config-next: 12.1.0
-  framer-motion: ^6.2.6
+  framer-motion: ^6.2.7
   next: 12.1.0
-  next-themes: ^0.0.15
+  next-themes: ^0.1.1
   postcss: ^8.4.6
   react: 17.0.2
   react-copy-to-clipboard: ^5.0.4
@@ -29,9 +29,9 @@ dependencies:
   '@emailjs/browser': 3.4.0
   '@tippyjs/react': 4.2.6_react-dom@17.0.2+react@17.0.2
   autoprefixer: 10.4.2_postcss@8.4.6
-  framer-motion: 6.2.6_react-dom@17.0.2+react@17.0.2
+  framer-motion: 6.2.7_react-dom@17.0.2+react@17.0.2
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
-  next-themes: 0.0.15_caa633a00319350dbda42996613fe26c
+  next-themes: 0.1.1_caa633a00319350dbda42996613fe26c
   postcss: 8.4.6
   react: 17.0.2
   react-copy-to-clipboard: 5.0.4_react@17.0.2
@@ -47,7 +47,7 @@ devDependencies:
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.23
   '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.23
   '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.23
-  '@types/node': 17.0.18
+  '@types/node': 17.0.19
   '@types/react': 17.0.39
   eslint: 8.9.0
   eslint-config-next: 12.1.0_05da38aa0d7c6b76490c613c98841282
@@ -344,8 +344,8 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
 
-  /@types/node/17.0.18:
-    resolution: {integrity: sha512-eKj4f/BsN/qcculZiRSujogjvp5O/k4lOW5m35NopjZM/QwLOR075a8pJW5hD+Rtdm2DaCVPENS6KtSQnUD6BA==}
+  /@types/node/17.0.19:
+    resolution: {integrity: sha512-PfeQhvcMR4cPFVuYfBN4ifG7p9c+Dlh3yUZR6k+5yQK7wX3gDgVxBly4/WkBRs9x4dmcy1TVl08SY67wwtEvmA==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -1591,8 +1591,8 @@ packages:
     resolution: {integrity: sha512-pUHWWt6vHzZZiQJcM6S/0PXfS+g6FM4BF5rj9wZyreivhQPdsh5PpE25VtSNxq80wHS5RfY51Ii+8Z0Zl/pmzg==}
     dev: false
 
-  /framer-motion/6.2.6_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-7eGav5MxEEzDHozQTDY6+psTIOw2i2kM1QVoJOC3bCp9VOKoo+mKR5n7aT5JPh7ksEKFYJYz0GJDils/9S+oLA==}
+  /framer-motion/6.2.7_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-RExmZCFpJ3OCakoXmZz8iW8ZI5MoaHmVadydetvTSrNaKmZ7ZC/JDQpNyw1NoDG+fchRGP86lXoiTFSQuin+Cg==}
     peerDependencies:
       react: '>=16.8 || ^17.0.0 || ^18.0.0'
       react-dom: '>=16.8 || ^17.0.0 || ^18.0.0'
@@ -2255,10 +2255,10 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /next-themes/0.0.15_caa633a00319350dbda42996613fe26c:
-    resolution: {integrity: sha512-LTmtqYi03c4gMTJmWwVK9XkHL7h0/+XrtR970Ujvtu3s0kZNeJN24aJsi4rkZOI8i19+qq6f8j+8Duwy5jqcrQ==}
+  /next-themes/0.1.1_caa633a00319350dbda42996613fe26c:
+    resolution: {integrity: sha512-Iqxt6rhS/KfK/iHJ0tfFjTcdLEAI0AgwFuAFrMwLOPK5e+MI3I+fzyvBoS+VaOS+NldUiazurhgwYhrfV0VXsQ==}
     peerDependencies:
-      next: '*'
+      next: '>=11.1.1'
       react: '*'
       react-dom: '*'
     dependencies:
