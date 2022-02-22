@@ -20,7 +20,7 @@ export default function Form() {
       }
     );
     e.target.reset();
-    setSendForm('Sent');
+    setSendForm('🥳 Sent! I will reply shortly.');
     setTimeout(() => setSendForm('Send'), 2000);
   };
 
