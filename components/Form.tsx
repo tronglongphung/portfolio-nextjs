@@ -11,7 +11,7 @@ export default function Form() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_19hzcfn', 'template_x6c8mva', form.current).then(
+    emailjs.sendForm('service_19hzcfn', 'template_4220xgb', form.current).then(
       (result) => {
         console.log(result.text);
       },
