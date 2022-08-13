@@ -10,13 +10,13 @@ export default function Footer() {
   return (
     <footer className="flex items-center justify-end gap-3 py-6 border-t sm:gap-4 border-stone-200 dark:border-stone-700">
       <Tippy content="GitHub">
-        <a href="https://github.com/tronglongphung">
+        <a href="https://github.com/tronglongphung" aria-label="GitHub">
           <AiFillGithub size={28} />
         </a>
       </Tippy>
 
       <Tippy content="LinkedIn">
-        <a href="https://www.linkedin.com/in/tomphung0501/">
+        <a href="https://www.linkedin.com/in/tomphung0501/" aria-label="LinkedIn">
           <AiFillLinkedin size={28} />
         </a>
       </Tippy>
@@ -35,7 +35,7 @@ export default function Footer() {
               setTimeout(() => setCopyStatus('Click the mail logo to copy'), 2000);
             }}
           >
-            <button className="align-middle">
+            <button aria-label="Email" className="align-middle">
               <AiFillMail size={28} />
             </button>
           </CopyToClipboard>
