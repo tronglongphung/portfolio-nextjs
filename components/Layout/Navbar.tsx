@@ -2,9 +2,10 @@ import Link from '@/components/Link';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 
 const navigation = [
-  { name: 'Home', href: '/' },
+  { name: 'About Me', href: '/' },
   { name: 'Work', href: '/work' },
   { name: 'Resume', href: '/resume.pdf' },
 ];
@@ -14,8 +15,14 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const router = useRouter();
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
   return (
     <nav className="flex items-center justify-between gap-2 pt-4 pb-8 text-sm sm:pb-14 sm:pt-8 sm:text-base">
       <div className="flex gap-2">

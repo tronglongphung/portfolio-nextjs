@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Head from 'next/head';
 import Form from '@/components/Form';
 import { SiNextdotjs, SiTailwindcss, SiNodedotjs, SiTypescript } from 'react-icons/si';
 import { Container, Stagger, FadeSection } from '@/components/Animation';
 import styles from '../styles/index.module.css';
 import Tippy from '@tippyjs/react';
+import profileImage from '../public/profile.webp';
 
 export default function Home() {
   return (
@@ -33,11 +34,12 @@ export default function Home() {
 
             <div className="w-[115px] sm:w-[140px] relative mb-3 sm:mb-0 mr-auto flex-shrink-0 dark:grayscale">
               <Image
-                src={'/profile.webp'}
+                src={profileImage}
                 alt="Tom Phung"
                 width={280}
                 height={284}
                 className="rounded-2xl sm:rounded-full"
+                priority
               />
             </div>
           </FadeSection>
