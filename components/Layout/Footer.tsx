@@ -20,27 +20,28 @@ export default function Footer() {
           <AiFillLinkedin size={28} />
         </a>
       </Tippy>
-
-      <Tippy
-        trigger="mouseenter"
-        hideOnClick={false}
-        interactive
-        content={<span>{copyStatus} tronglongphung@gmail.com</span>}
-      >
-        <div>
-          <CopyToClipboard
-            text="tronglongphung@gmail.com"
-            onCopy={() => {
-              setCopyStatus('Copied to clipboard 🥳');
-              setTimeout(() => setCopyStatus('Click the mail logo to copy'), 2000);
-            }}
-          >
-            <button aria-label="Email" className="align-middle">
-              <AiFillMail size={28} />
-            </button>
-          </CopyToClipboard>
-        </div>
-      </Tippy>
+      <div aria-label="Email" id="parent">
+        <Tippy
+          trigger="mouseenter"
+          hideOnClick={false}
+          interactive
+          content={<span>{copyStatus} tronglongphung@gmail.com</span>}
+        >
+          <div>
+            <CopyToClipboard
+              text="tronglongphung@gmail.com"
+              onCopy={() => {
+                setCopyStatus('Copied to clipboard 🥳');
+                setTimeout(() => setCopyStatus('Click the mail logo to copy'), 2000);
+              }}
+            >
+              <div className="align-middle cursor-pointer">
+                <AiFillMail size={28} />
+              </div>
+            </CopyToClipboard>
+          </div>
+        </Tippy>
+      </div>
     </footer>
   );
 }
