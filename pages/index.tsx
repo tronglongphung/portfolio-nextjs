@@ -52,7 +52,7 @@ export default function Home() {
                 <strong>Location: </strong>🏡 Adelaide, Australia
               </p>
               <p className={styles.section_p}>
-                <strong>Hobbies: </strong>🏌️‍♂️ Golfing, 💪🏼 Gyming, 🕹 Gaming (Triple G's LOL)
+                <strong>Hobbies: </strong>🏌️‍♂️ Golfing, 💪🏼 Gyming, 🕹 Gaming
               </p>
               <p className={styles.section_p}>
                 <strong>Education: </strong>📚 B.Bus (Management) @UniSA, 🧑🏻‍💻 Coding Bootcamp @UofA
